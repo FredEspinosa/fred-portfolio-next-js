@@ -1,0 +1,229 @@
+.header {
+    position: relative;
+    background-color: #e3e3e3;
+    overflow: hidden;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 60vh;
+    z-index: 3;
+}
+
+.content {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    max-width: 1024px;
+    width: 100%;
+}
+
+.avatar {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    object-fit: cover;
+    -webkit-mask-image: radial-gradient(circle at left 75%, black 100%, transparent 100%);
+    mask-image: radial-gradient(circle at left 75%, black 100%, transparent 100%);
+    border-radius: 50%;
+}
+
+.textBlock {
+    font-weight: 500;
+    width: 100%;
+}
+
+.title {
+    font-size: 3rem;
+    letter-spacing: -2px;
+    line-height: 1.1;
+    text-shadow: 0 0 10px #0006;
+    color: #ad9c7fc7;
+    text-transform: uppercase;
+}
+
+.subtitle {
+    margin-top: 0.5rem;
+    font-size: 1.4rem;
+    line-height: 1.1;
+    text-shadow: 0 0 10px #0006;
+    color: #3d383887;
+    text-transform: uppercase;
+}
+
+.description {
+    margin-top: 0.25rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #6b7280; // gray-500
+}
+
+/* Fondo animado */
+.white {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    pointer-events: none;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 60vh;
+        //   background-image: linear-gradient(-180deg, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
+        z-index: 1;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 20vh;
+        //   background-image: linear-gradient(0deg, #ebebeb 0%, rgba(235, 235, 235, 0) 100%);
+        z-index: 1;
+    }
+}
+
+.wrapimg {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.squares {
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    overflow: hidden;
+    z-index: 0;
+    position: absolute;
+    inset: 0;
+}
+
+.square {
+    background: #d4d2d2;
+    align-self: flex-end;
+    width: 1em;
+    height: 1em;
+    animation: squares 9.5s linear infinite;
+    transform: translateY(100%);
+
+    &:nth-child(2) {
+        height: 1.5em;
+        width: 3em;
+        animation-delay: 1s;
+        animation-duration: 17s;
+        filter: blur(5px);
+    }
+
+    &:nth-child(3) {
+        height: 2em;
+        width: 1em;
+        animation-delay: 1.5s;
+        animation-duration: 8s;
+    }
+
+    &:nth-child(4) {
+        height: 1em;
+        width: 1.5em;
+        animation-delay: 0.5s;
+        filter: blur(3px);
+        animation-duration: 13s;
+    }
+
+    &:nth-child(5) {
+        height: 1.25em;
+        width: 2em;
+        animation-delay: 4s;
+        filter: blur(2px);
+        animation-duration: 11s;
+    }
+
+    &:nth-child(6) {
+        height: 2.5em;
+        width: 2em;
+        animation-delay: 2s;
+        filter: blur(1px);
+        animation-duration: 9s;
+    }
+
+    &:nth-child(7) {
+        height: 5em;
+        width: 2em;
+        filter: blur(2.5px);
+        animation-duration: 12s;
+    }
+
+    &:nth-child(8) {
+        height: 1em;
+        width: 3em;
+        animation-delay: 5s;
+        filter: blur(6px);
+        animation-duration: 18s;
+    }
+
+    &:nth-child(9) {
+        height: 1.5em;
+        width: 2em;
+        filter: blur(0.5px);
+        animation-duration: 9s;
+    }
+
+    &:nth-child(10) {
+        height: 3em;
+        width: 2.4em;
+        animation-delay: 6s;
+        filter: blur(0.5px);
+        animation-duration: 12s;
+    }
+}
+
+@keyframes squares {
+    from {
+        transform: translateY(100%) rotate(-50deg);
+    }
+
+    to {
+        transform: translateY(calc(-100vh - 100%)) rotate(20deg);
+    }
+}
+
+@media (max-width: 1024px) {
+    .headerContainer {
+      height: 80vh;
+    }
+  
+    .square {
+      width: 0.8em;
+      height: 0.8em;
+    }
+  }
+  
+  @media (max-width: 768px) {
+
+    .headerContainer {
+      height: 70vh;
+    }
+  
+    .square {
+      width: 0.6em;
+      height: 0.6em;
+    }
+  
+    .squares {
+      justify-content: space-between;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .content {
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+    }
+  }

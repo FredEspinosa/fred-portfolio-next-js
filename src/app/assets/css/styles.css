@@ -1,0 +1,60 @@
+h1,
+.titles {
+    font-size: 4rem;
+    letter-spacing: -2px;
+    line-height: 1.1;
+    text-shadow: 0 0 10px #0006;
+    color: #222;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+}
+
+.text_right {
+    text-align: right;
+}
+
+.d-flex {
+    display: flex
+}
+
+.align-items-anchor {
+    align-items: anchor-center;
+}
+
+.container-about-me {
+    display: flex;
+    align-items: start;
+}
+
+.bg-personal {
+    background-color: #e3e3e3;
+}
+
+.subtitle-card {
+    margin-top: 0.5rem;
+    font-size: 1.2rem;
+    line-height: 1.1;
+    text-shadow: 0 0 10px #0006;
+    color: #4b4a4ac4;
+    text-transform: uppercase;
+}
+
+.img-web-site-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 100px;
+    object-fit: cover;
+}
+
+.img-web-site {
+    width: 100%;
+    height: auto;
+    max-width: 150px;
+    margin: auto;
+    padding: 15px
+}
+
+.text-link {
+    color: #80725b;
+}
