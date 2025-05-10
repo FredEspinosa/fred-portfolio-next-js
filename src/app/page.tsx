@@ -16,38 +16,40 @@ interface Project {
 const projects: Project[] = [
   {
     title: "Helena",
-    description:
-      "App tipo Tinder para citas, con chat en tiempo real y sistema de matches.",
+    description: "Tinder-like dating app with real-time chat and matching system.",
+      // "App tipo Tinder para citas, con chat en tiempo real y sistema de matches.",
     url: "https://helena-app-beta.vercel.app/",
     tech: ["React", "Firebase", "Swiper", "Bootstrap"],
     image: ImgWebHelena,
   },
   {
     title: "Consorcio",
-    description:
-      "Aplicación web de autenticación biométrica para gestión de consorcios.",
+    description: "Biometric authentication web application for consortium management.",
+      // "Aplicación web de autenticación biométrica para gestión de consorcios.",
     url: "https://app.consorcio-dicio.com:1003/login",
     tech: ["React", "Vite", "Bootstrap", "Facetec"],
     image: ImgWebConsorcio,
   },
   {
     title: "Dicio - Apertura Remota",
-    description:
-      "Aplicación de apertura de cuentas con validación facial en tiempo real.",
+    description: "Account opening application with real-time facial validation.",
+      // "Aplicación de apertura de cuentas con validación facial en tiempo real.",
     url: "https://web-celd-1-1.vercel.app/inicio",
     tech: ["React", "Node.js", "Microblink", "Facetec"],
     image: "https://dco-bucket-assets-prod.obs.na-mexico-1.myhuaweicloud.com/eb97bcad-b465-49f2-b5e0-d2ed1751f0b1/logo.png",
   },
   {
     title: "TAG Airlines",
-    description: "Sitio oficial de aerolínea para compra de boletos.",
+    description: "Official airline website for purchasing tickets.",
+    // "Sitio oficial de aerolínea para compra de boletos.",
     url: "https://tagairlines.com/es-gt/",
     tech: ["Angular", "JavaScript", "SCSS"],
     image: "https://tagairlines.com/img/navbar/logo_TAG.svg",
   },
   {
     title: "Los Eme",
-    description: "Landing page de marca de ropa mexicana.",
+    description: "Mexican food brand website",
+    // "Landing page de marca de ropa mexicana.",
     url: "https://www.loseme.com.mx/",
     tech: ["HTML5", "CSS3", "JavaScript"],
     image: "https://www.loseme.com.mx/assets/img/home/los-eme-logo-white.svg",
@@ -107,7 +109,7 @@ const Home: React.FC = () => {
                 </h2>
                 <p className="text-gray-600 mb-2">{project.description}</p>
                 <p className="text-sm text-gray-500 mb-2">
-                  <strong>Tecnologías:</strong> {project.tech.join(", ")}
+                  <strong>Technologies:</strong> {project.tech.join(", ")}
                 </p>
                 <Link
                   href={project.url}
@@ -115,7 +117,8 @@ const Home: React.FC = () => {
                   rel="noopener noreferrer"
                   className="text-indigo-500 hover:underline text-link"
                 >
-                  Ver proyecto
+                  See project
+                  {/* Ver proyecto */}
                 </Link>
               </div>
             </div>

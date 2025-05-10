@@ -1,6 +1,6 @@
 import Image from "next/image";
 import ImgProfile from "../assets/images/fred_espinosa_profile.jpeg";
-import styles from "../assets/css/Header/header.module.scss";
+import styles from "../assets/css/header/header.module.scss";
 
 
 export default function Header() {
