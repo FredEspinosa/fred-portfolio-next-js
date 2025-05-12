@@ -4,6 +4,9 @@ import Image from "next/image";
 import Header from "./components/header";
 import ImgWebHelena from "./assets/images/Helena_LOGO.png"
 import ImgWebConsorcio from "./assets/images/circulo-logo-horizontal.png"
+import ImgWebPalacio from "./assets/images/el-palacio-de-hierro.svg"
+
+// profile git hub :  https://github.com/FredEspinosa
 
 interface Project {
   title: string;
@@ -53,6 +56,15 @@ const projects: Project[] = [
     url: "https://www.loseme.com.mx/",
     tech: ["HTML5", "CSS3", "JavaScript"],
     image: "https://www.loseme.com.mx/assets/img/home/los-eme-logo-white.svg",
+  },
+  {
+    title: "Quiz Palacio de Hierro",
+    description: "Iframe for a Mexican clothing store used in a random response dynamic.",
+    // "Iframe para una tienda de ropa mexicana para una dinámica de una respuésta aleatoria.",
+    // url: "http://localhost:3000/palacio-hierro/iframe.html",
+    url: "https://fred-portfolio-git-main-fredespinosa-projects.vercel.app/palacio-hierro/iframe.html",
+    tech: ["HTML5", "CSS3", "JavaScript"],
+    image: ImgWebPalacio,
   },
 ];
 
