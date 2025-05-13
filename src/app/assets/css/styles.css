@@ -58,3 +58,22 @@ h1,
 .text-link {
     color: #80725b;
 }
+
+.buton_fixed {
+    margin: 0;
+    position: fixed;
+    top: 0%;
+    z-index: 9;
+    right: 0;
+}
+
+.label_switch {
+    line-height: 1.1;
+    text-shadow: 0 0 10px #ad9c7fc7;
+    color: #ad9c7fc7;
+    margin: auto;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 13px;
+    margin-top: 10px;
+}

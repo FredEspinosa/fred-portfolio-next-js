@@ -1,0 +1,78 @@
+@import url('https://weloveiconfonts.com/api/?family=fontawesome');
+
+[class*="fontawesome-"]:before {
+  font-family: 'FontAwesome', sans-serif;
+}
+
+/* ---------- GENERAL ---------- */
+
+.nav-social {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+// .social-nav {
+//   width: 50px;
+// }
+
+.social-nav ul {
+  background-color: #4e45302b;
+  border-radius: 5px;
+  display: inline-table;
+  position: relative;
+  opacity: 0.8;
+}
+
+.social-nav li {
+  float: left;
+}
+
+.social-nav a {
+  color: #ad9c7fab;
+  display: flex;
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+  width: 50px;
+  text-decoration: none;
+}
+
+.social-nav a:hover {
+  color: #e3e3e3;
+}
+
+.social-nav ul li ul {
+  background: #e3e3e3;
+  margin-top: 20px;
+  padding: 5px 0;
+  position: absolute;
+  opacity: 1;
+}
+
+.social-nav ul li ul:before {
+  background: #e3e3e3;
+  content: "";
+  height: 8px;
+  left: 50%;
+  margin: -4px 0 0 -4px;
+  position: absolute;
+  top: 0;
+  transform: rotate(45deg);
+  width: 8px;
+  opacity: 1;
+}
+
+.social-nav ul li ul li {
+  float: none;
+}
+
+.social-nav ul li ul li a {
+  color: #ad9c7fab;
+}
+
+.social-nav ul li ul li a:hover {
+  background-color: #ad9c7fab;
+  color: #e3e3e3;
+  opacity: 1;
+}

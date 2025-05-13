@@ -2,8 +2,13 @@ import Image from "next/image";
 import ImgProfile from "../assets/images/fred_espinosa_profile.jpeg";
 import styles from "../assets/css/header/header.module.scss";
 
+type HeaderProps = {
+  nombre: string;
+  subtitle: string;
+  description: string;
+};
 
-export default function Header() {
+export default function Header({title, subtitle, description}) {
   return (
     <header className={styles.header}>
       {/* Fondo animado */}
@@ -25,9 +30,9 @@ export default function Header() {
           />
         </div>
         <div className={styles.textBlock}>
-          <p className={styles.title}>Port Folio</p>
-          <p className={styles.subtitle}>Alfredo Espinosa</p>
-          <p className={styles.description}>Front-End Developer</p>
+          <p className={styles.title}>{title}</p>
+          <p className={styles.subtitle}>{subtitle}</p>
+          <p className={styles.description}>{description}</p>
         </div>
       </div>
     </header>
