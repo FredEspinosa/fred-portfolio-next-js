@@ -3,12 +3,12 @@ import ImgProfile from "../assets/images/fred_espinosa_profile.jpeg";
 import styles from "../assets/css/header/header.module.scss";
 
 type HeaderProps = {
-  nombre: string;
+  title: string;
   subtitle: string;
   description: string;
 };
 
-export default function Header({title, subtitle, description}) {
+export default function Header({ title, subtitle, description }: HeaderProps) {
   return (
     <header className={styles.header}>
       {/* Fondo animado */}
